@@ -42,63 +42,40 @@ header {
     transform: scaleX(1);
 }
 
+/*********************************************/
 
-.login-main {
-    display: flex;
-    justify-content: center;
-    padding-top: 10vh;
-    height: 100vh;
+main h2 {
+    text-align: center;
+    padding: 50px;
 }
 
-.form-container-login {
-    position: relative;
-    width: 35vw;
-    height: 60vh;
-    border: 1px solid rgb(172, 172, 172);
+.villager-container .villager, .villager-title {
+    text-align: center;
+    border: 1px solid lightgrey;
+
+}
+
+.villager-title {
+    background-color: rgb(36, 36, 36);
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    color: white;
+}
+
+.villager {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
 }
 
-.form-box {
-    width: 100%;
-    padding: 30px;
-}
-
-.form-box h2 {
-    font-size: 2em;
-    font-weight: 400;
-    color: black;
-    text-align: center;
-    margin-bottom: 5vh;
+.villager-title p, .villager p {
+    padding: 10px 0px 10px 0;
+    width: 20%;
 }
 
 
 
-.input-box textarea {
-    height: 30vh;
-    width: 100%;
-    margin-bottom: 40px;
-    outline: none;
-}
 
-.btn {
-    text-align: center;
-}
 
-.login-btn {
-    width: 30%;
-    height: 45px;
-    background: rgb(171, 248, 171);
-    border: 2px solid rgb(171, 248, 171);
-    outline: none;
-    border-radius: 30px;
-    cursor: pointer;
-    font-weight: 500;
-    align-content: center;
-}
-
-.login-btn:hover {
-    background-color: rgb(132, 218, 132);
-    border: rgb(132, 218, 132);
-}
