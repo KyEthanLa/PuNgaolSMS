@@ -10,8 +10,9 @@ header {
     width: 100%;
     padding: 20px 50px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(148deg, rgb(34, 34, 34),rgb(90, 90, 90));
+    background: linear-gradient(148deg, rgb(34, 34, 34),rgb(76, 76, 76));
 }
 
 .navigation a {
@@ -21,6 +22,12 @@ header {
     color: white;
     font-weight: 300;
     margin-left: 40px;
+}
+
+header a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
 }
 
 .navigation a::after {
@@ -46,8 +53,9 @@ main {
     padding: 10px;
 }
 
-h1 {
-    padding: 40px;
+p {
+    padding: 35px;
+    font-size: 30px;
 }
 
 #container {
