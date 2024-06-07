@@ -1,0 +1,19 @@
+{
+  "name": "pungaolsms",
+  "version": "1.0.0",
+  "description": "A repository containing the SMS villager-to-government communication system for the Engineers without Borders Synoptic Project 2024.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
