@@ -1,3 +1,11 @@
+const weekday = 
+["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+var now = new Date();
+const year = now.getFullYear();
+const month = now.getMonth() + 1; // Months are zero-based, so add 1
+const day = now.getDate();
+
 let weather = {
     apiKey: "63b96358f3c2c5f0c6aec408caa99842",
     fetchWeather: function (city) {
@@ -19,7 +27,7 @@ let weather = {
     displayWeather: function (data) {
       const { name } = data;
       const { icon, description } = data.weather[0];
-      const { temp, feels_like, temp_min, temp_max, pressure, humidity } = data.main;
+      const { temp, feels_like, temp_min, temp_max, pressure, humidity, sea_level, grnd_level } = data.main;
       const { speed } = data.wind;
       document.querySelector(".city").innerText = "Today in " + name;
       document.querySelector(".icon").src =
@@ -27,18 +35,30 @@ let weather = {
       document.querySelector(".description").innerText = description;
       document.querySelector(".temp").innerText = temp + "°C";
       document.querySelector(".feels-like").innerText =
-        "Feels Like: " + feels_like;
+        "Feels Like: " + feels_like + "°C";
       document.querySelector(".temp-min").innerText =
       "Minimum Temperature: " + temp_min + "°C";
       document.querySelector(".temp-max").innerText =
-      "Maximum Temperature: " + temp_max + "°C";
+      "Maximum Temperature: " + temp_max +"°C";
       document.querySelector(".pressure").innerText =
       "Pressure: " + pressure;
       document.querySelector(".humidity").innerText =
-        "Humidity: " + humidity + "%";
+        "Humidity: " + humidity;
+        document.querySelector(".sea-level").innerText =
+        "Sea Level: " + sea_level;
+        document.querySelector(".grnd-level").innerText =
+        "Ground Level: " + grnd_level;
       document.querySelector(".wind").innerText =
         "Wind speed: " + speed + " km/h";
       document.querySelector(".weather").classList.remove("loading");
+      document.querySelector(".friday-title").innerText =
+        (day + 1)+ "/" + month + "/" + year;
+      document.querySelector(".saturday-title").innerText =
+      (day + 2)+ "/" + month + "/" + year;
+      document.querySelector(".sunday-title").innerText =
+      (day + 3)+ "/" + month + "/" + year;
+      document.querySelector(".monday-title").innerText =
+      (day + 4)+ "/" + month + "/" + year;
       document.body.style.backgroundImage =
         "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
