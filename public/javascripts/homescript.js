@@ -21,7 +21,7 @@ let weather = {
       const { icon, description } = data.weather[0];
       const { temp, feels_like, temp_min, temp_max, pressure, humidity } = data.main;
       const { speed } = data.wind;
-      document.querySelector(".city").innerText = "Today in Mondulkiri";
+      document.querySelector(".city").innerText = "Today in " + name;
       document.querySelector(".icon").src =
         "https://openweathermap.org/img/wn/" + icon + ".png";
       document.querySelector(".description").innerText = description;

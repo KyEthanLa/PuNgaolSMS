@@ -1,10 +1,1 @@
-[
-    {
-        "email": "gov@test.com",
-        "password": "1"
-    },
-    {
-        "email": "test@test.com",
-        "password": "123"
-    }
-]
+[{"username":"Ethan ","number":"333","email":"kyethanla@gmail.com","password":"1"},{"username":"444","number":"gov@test.com","email":"Gov","password":"1"}]
