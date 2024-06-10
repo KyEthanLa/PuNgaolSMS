@@ -12,6 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid rgb(116, 116, 116);
     background: linear-gradient(148deg, rgb(34, 34, 34),rgb(65, 65, 65));
 }
 
@@ -78,24 +79,17 @@ p {
     border-radius: 20px;
 }
 
-
-
-
-
-
 .item2 {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: white;
     background-image: url('https://source.unsplash.com/1600x900/?landscape');
     font-size: 100%;
     width: 50%;
     flex-grow: 1;
     border: 1px solid lightgrey;
     height: 70vh;
-    margin-top: 0px;
     border-radius: 20px;
+    padding: 10px 0px 10px 0;
   }
   
   .card {
@@ -105,7 +99,7 @@ p {
     border-radius: 30px;
     width: 100%;
     max-width: 420px;
-    margin: 1em;
+    margin: 10px;
   }
   
   .search {
@@ -151,11 +145,16 @@ p {
   .flex {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: rgb(73, 73, 73);
+    border-radius: 20px;
+    padding: 7px;
+    margin-bottom: 10px;
   }
   
   .description {
     text-transform: capitalize;
-    margin-left: 8px;
+
   }
   
   .weather.loading {
@@ -171,6 +170,28 @@ p {
     position: absolute;
     top: 0;
     left: 20px;
+  }
+
+
+  .card2 {
+    background: white;
+    color: white;
+    padding: 0em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .day {
+    background: #000000d0;
+    flex-grow: 1;
+    height: 25%;
+    border: 1px solid;
+    border-radius: 30px;
   }
 
 

@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheets/index.css">
+    <link rel="stylesheet" href="/stylesheets/register.css">
     <title>Login</title>
 </head>
 <body>
@@ -20,17 +20,23 @@
     </header>
 
     <main>
-        <div class="form-container-login">
+        <div class="form-container-register">
             <div class="form-box">
                 <form action="#" method="POST">
-                    <h2>Login</h2>
+                    <h2>Register</h2>
+                    <div class="input-box">
+                        <input id="name" type="text" name="name" placeholder="Name" required="" />
+                    </div>
+                    <div class="input-box">
+                        <input id="number" type="number" name="number" placeholder="Number" required="" />
+                    </div>
                     <div class="input-box">
                         <input id="email" type="email" name="email" placeholder="Email" required="" />
                     </div>
                     <div class="input-box">
                         <input id="password" type="password" name="password" placeholder="Password" required="" />
                     </div>
-                    <button class="login-btn" type="submit" value="Login">Login</button>
+                    <button class="register-btn" type="submit" value="Register">Create Account</button>
                     
                 </form>
             </div>
