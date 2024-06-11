@@ -24,7 +24,19 @@
     <main>
         <p>Welcome, <%= email %></p>
         <div id="container">
-            <div class="item">Job listings</div>
+            <div class="item">
+                <h2 class="job-listings">Job Listings</h2>
+                <div class="user-container">
+                    <p>Job Name</p>
+                    <p>uea@uea.ac.uk</p>
+                    <div>
+                        <button class="delete" type="submit" onclick="openDeletePopup()">Details</button>
+                        <div class="delete-popup" id="delete-popup">
+                            <button class="close" type="button" onclick="closeDeletePopup()">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="item2">
                 <div class="card">
                     <div class="search">

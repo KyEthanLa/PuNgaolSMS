@@ -80,3 +80,49 @@ let weather = {
     });
   
   weather.fetchWeather("Ratanakiri");
+
+  let popup = document.getElementById("status-popup");
+
+  function openStatusPopup() {
+      popup.classList.add("openstatus-popup");
+  }
+  
+  function closeStatusPopup() {
+      popup.classList.remove("openstatus-popup");
+  }
+  
+  
+  
+  let deletePopup = document.getElementById("delete-popup");
+  
+  function openDeletePopup() {
+      deletePopup.classList.add("opendelete-popup");
+  }
+  
+  function closeDeletePopup() {
+      deletePopup.classList.remove("opendelete-popup");
+  }
+  
+  
+  
+  let blockPopup = document.getElementById("block-popup");
+  
+  function openBlockPopup() {
+      blockPopup.classList.add("openblock-popup");
+  }
+  
+  function closeBlockPopup() {
+      blockPopup.classList.remove("openblock-popup");
+  }
+  
+  let reservePopup = document.getElementById("reserve-popup");
+  
+  function openReservePopup() {
+      reservePopup.classList.add("openreserve-popup");
+  }
+  
+  function closeReservePopup() {
+      reservePopup.classList.remove("openreserve-popup");
+  }
+  
+  

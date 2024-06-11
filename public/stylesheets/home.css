@@ -54,14 +54,18 @@ header a {
     transform: scaleX(1);
 }
 
+
+/**************main content************/
 main {
     text-align: center;
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 
 p {
     padding: 35px;
-    font-size: 30px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-weight: 250;
 }
 
 #container {
@@ -88,7 +92,7 @@ p {
     flex-grow: 1;
     border: 1px solid lightgrey;
     height: 70vh;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 0px 0px 0px 0;
     box-shadow: 0 0 5px lightgrey;
   }
@@ -174,7 +178,6 @@ p {
     left: 20px;
   }
 
-
   .card2 {
     background: white;
     color: white;
@@ -205,6 +208,96 @@ p {
     border: 1px solid;
     border-radius: 30px;
   }
+
+
+/***************************************first item in container******************/
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(39, 39, 39);
+    border: 1px solid white;
+    box-shadow: 0 0 5px lightgrey;
+    overflow-y: scroll;
+}
+
+.job-listings {
+  color: white;
+  background-color: rgb(61, 61, 61);
+  font-weight: 300;
+  padding: 5px;
+}
+
+.parking1-container button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.delete-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.3s, top 0.1s;
+    box-shadow: 0 0 5px white;
+}
+
+.opendelete-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+.user-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+    height: 9vh;
+}
+
+.user-container:hover {
+    cursor: pointer;
+}
+
+.user-container p {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.user-container button {
+    background-color: white;
+    font-weight: 400;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    box-shadow: 0 0 3px white;
+    height: 35px;
+}
+
+.user-container button:hover {
+    background-color: rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+
+/******************item 2 in container****************/
 
 
 
